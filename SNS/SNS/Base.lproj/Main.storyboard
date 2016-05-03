@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SNS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aL1-3s-Zqj">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="khe-vt-ui9">
+                                        <connections>
+                                            <action selector="showActivityView:" destination="BYZ-38-t0r" id="yKS-Vh-T5m"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IEZ-Jv-vlP">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="jSw-yt-5yD">
+                                        <connections>
+                                            <action selector="showActivityView:" destination="BYZ-38-t0r" id="YsH-22-nh6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dog.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="W9Y-fN-UaU">
+                                <rect key="frame" x="18" y="0.0" width="562" height="556"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aL1-3s-Zqj" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="6Yl-Qw-cwd"/>
+                            <constraint firstItem="W9Y-fN-UaU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="785-AD-djs"/>
+                            <constraint firstAttribute="trailing" secondItem="aL1-3s-Zqj" secondAttribute="trailing" id="AmE-RC-chg"/>
+                            <constraint firstItem="IEZ-Jv-vlP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BeA-uC-lbY"/>
+                            <constraint firstItem="W9Y-fN-UaU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-2" id="NKz-Y6-Y0g"/>
+                            <constraint firstItem="aL1-3s-Zqj" firstAttribute="trailing" secondItem="IEZ-Jv-vlP" secondAttribute="trailing" id="Ok3-Lz-bII"/>
+                            <constraint firstItem="IEZ-Jv-vlP" firstAttribute="top" secondItem="W9Y-fN-UaU" secondAttribute="bottom" id="OpW-gR-svF"/>
+                            <constraint firstItem="aL1-3s-Zqj" firstAttribute="top" secondItem="IEZ-Jv-vlP" secondAttribute="top" id="VqF-aX-cyJ"/>
+                            <constraint firstItem="IEZ-Jv-vlP" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="egV-Gp-JlY"/>
+                            <constraint firstItem="W9Y-fN-UaU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ijw-ix-EtC"/>
+                            <constraint firstItem="aL1-3s-Zqj" firstAttribute="leading" secondItem="IEZ-Jv-vlP" secondAttribute="leading" id="ywL-im-Sid"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="W9Y-fN-UaU" id="p9G-8h-ofc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379" y="428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dog.jpeg" width="1125" height="1688"/>
+    </resources>
+</document>
