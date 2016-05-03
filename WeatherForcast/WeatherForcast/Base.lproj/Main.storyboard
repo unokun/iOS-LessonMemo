@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherForcast" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="渋谷区" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LY-wK-Wdv">
+                                <rect key="frame" x="264" y="129" width="72" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Xdy-h9-nQr"/>
+                                    <constraint firstAttribute="width" constant="72" id="etv-yf-76p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear" translatesAutoresizingMaskIntoConstraints="NO" id="bJI-5o-3cJ">
+                                <rect key="frame" x="239" y="168" width="44" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="4V4-tf-PQR"/>
+                                    <constraint firstAttribute="height" constant="45" id="mdh-IW-I3S"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13℃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYn-Wb-OPz">
+                                <rect key="frame" x="319" y="168" width="49" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="QhC-5T-mLm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dg4-Ti-myY">
+                                <rect key="frame" x="20" y="291" width="560" height="289"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">11日は西から日差しが戻るでしょう。九州や中国・四国は朝から晴れるところが多く、暖かくなりそうです。近畿や東海は午前中は雲が多くなりますが、午後は晴れ間が有り、気温も上がるでしょう。一方、北陸は朝まで海女、関東は昼頃まで雨で。雨がやんだあとも雲が多いままとなりそうです。東北から北海道は雲が多く、所々で雨が降るでしょう。関東から北はヒンヤリしそうです。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.54104881316427345" green="0.76165976331677199" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bJI-5o-3cJ" firstAttribute="top" secondItem="1LY-wK-Wdv" secondAttribute="bottom" constant="18" id="0DA-mj-Ndt"/>
+                            <constraint firstItem="Dg4-Ti-myY" firstAttribute="centerX" secondItem="1LY-wK-Wdv" secondAttribute="centerX" id="0Qz-bs-5Z2"/>
+                            <constraint firstItem="bJI-5o-3cJ" firstAttribute="bottom" secondItem="xYn-Wb-OPz" secondAttribute="bottom" id="3HK-s7-8Pe"/>
+                            <constraint firstItem="bJI-5o-3cJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-39" id="F4v-SW-m15"/>
+                            <constraint firstItem="Dg4-Ti-myY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FH9-Cm-fSC"/>
+                            <constraint firstItem="1LY-wK-Wdv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ICZ-si-Xv7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dg4-Ti-myY" secondAttribute="bottom" constant="153" id="b4f-Bi-yCA"/>
+                            <constraint firstItem="1LY-wK-Wdv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="109" id="xqR-Ch-7Pi"/>
+                            <constraint firstItem="xYn-Wb-OPz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="43.5" id="zF5-ga-OQs"/>
+                            <constraint firstItem="bJI-5o-3cJ" firstAttribute="top" secondItem="xYn-Wb-OPz" secondAttribute="top" id="ztU-CO-gXJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="Dg4-Ti-myY" id="VEg-dm-Zoh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clear" width="64" height="64"/>
+    </resources>
+</document>

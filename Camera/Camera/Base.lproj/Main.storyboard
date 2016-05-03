@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Camera" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SYj-ov-4Ln">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="717" id="Pmz-q2-fek"/>
+                                </constraints>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3MW-f1-I4L">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="カメラ" id="398-Or-N82">
+                                        <connections>
+                                            <action selector="launchCamera:" destination="BYZ-38-t0r" id="enE-Lb-zNF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SYj-ov-4Ln" firstAttribute="leading" secondItem="3MW-f1-I4L" secondAttribute="leading" id="45u-Js-FA1"/>
+                            <constraint firstItem="3MW-f1-I4L" firstAttribute="trailing" secondItem="SYj-ov-4Ln" secondAttribute="trailing" id="N8r-uy-0ew"/>
+                            <constraint firstItem="SYj-ov-4Ln" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ax4-FZ-dqQ"/>
+                            <constraint firstItem="3MW-f1-I4L" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="gk6-KB-bYd"/>
+                            <constraint firstItem="SYj-ov-4Ln" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o0L-Au-qXI"/>
+                            <constraint firstItem="SYj-ov-4Ln" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="o0V-t6-KOh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="SYj-ov-4Ln" id="Nos-W6-89B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="339"/>
+        </scene>
+    </scenes>
+</document>
