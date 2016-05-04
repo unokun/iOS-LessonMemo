@@ -14,7 +14,10 @@ class ViewController: UIViewController {
     @IBAction func showActivityView(sender: UIBarButtonItem) {
         let controller = UIActivityViewController(activityItems: [imageView.image!],
             applicationActivities: nil)
-//        self.presentViewController(controller, animated: true, completion: showMessage)
+        // completionに関数(名)をセットします
+        //        self.presentViewController(controller, animated: true, completion: showMessage)
+        // completionに関数(処理)をセットします
+        // 関数名のない関数は、無名関数と呼ばれます。
         self.presentViewController(controller, animated: true, completion: { print("表示終了") })
     }
     func showMessage() {

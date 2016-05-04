@@ -1,6 +1,10 @@
 //: Playground - noun: a place where people can play
 import Foundation
 
+func areaOfTriangle(base: Int, height: Int) -> Int {
+    return base * height / 2
+}
+
 // autoclosure
 func f(@autoclosure pred: () -> Bool) {
     if pred() {
