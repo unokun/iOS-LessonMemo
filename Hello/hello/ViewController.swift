@@ -20,14 +20,14 @@ class ViewController: UIViewController {
     // ここから
     @IBOutlet weak var textField: UITextField!
     
-    @IBAction func didEditChanged(sender: AnyObject) {
+    @IBAction func didEditChanged(_ sender: AnyObject) {
         label.text = textField.text
 //        print(textField.text)
         
     }
     // ここまで
     
-    @IBAction func sayHello(sender: AnyObject) {
+    @IBAction func sayHello(_ sender: AnyObject) {
         // ラベルにTextFieldの値を追加
 //        label.text = "こんにちは"
         if sender.tag == BTN_POST {
